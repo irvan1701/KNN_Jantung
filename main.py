@@ -11,9 +11,11 @@ Silahkan Menginput Data Pasien
 """
 )
 
-
-age = st.number_input('Usia Pasien', 0, 1000)
-sex = st.number_input('Jenis Kelamin | 0 : Laki-Laki, 1 : Perempuan', 0, 1)
+col1, col2 = st.columns(2)
+with col1:
+    age = st.number_input('Usia Pasien', 0, 1000)
+with col2:
+    sex = st.number_input('Jenis Kelamin | 0 : Laki-Laki, 1 : Perempuan', 0, 1)
 cp = st.number_input('nyeri dada | 0(tidak ada), 1(Ringan), 2(Signifikan), dan 3(Hebat)', 0, 3)
 trestbps = st.number_input('Tekanan Darah', 0, 300)
 chol = st.number_input('konsentrasi kolesterol *mg/dl*', 0, 1000)
