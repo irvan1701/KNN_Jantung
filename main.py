@@ -16,13 +16,16 @@ with col1:
     age = st.number_input('Usia Pasien', 0, 1000)
 with col2:
     sex = st.number_input('Jenis Kelamin | 0 : Laki-Laki, 1 : Perempuan', 0, 1)
-cp = st.number_input('nyeri dada | 0(tidak ada), 1(Ringan), 2(Signifikan), dan 3(Hebat)', 0, 3)
 with col1:
     trestbps = st.number_input('Tekanan Darah', 0, 300)
 with col2:
     chol = st.number_input('konsentrasi kolesterol *mg/dl*', 0, 1000)
+with col1:
+    cp = st.number_input('nyeri dada | 0(tidak ada), 1(Ringan), 2(Signifikan), dan 3(Hebat)', 0, 3)
+with col2:
+    restecg = st.number_input('hasil ECG | 0(tidak ada kelainan), 1(kelainan minor), 2(kelainan signifikan)', 0, 2)
+
 fbs = st.number_input('konsentrasi gula setelah puasa dalam 8 jam | **1(> 120 mg/dl) dan 0(< 120 mg/dL)**', 0, 1)
-restecg = st.number_input('hasil ECG | 0(tidak ada kelainan), 1(kelainan minor), 2(kelainan signifikan)', 0, 2)
 thalach = st.number_input('thalach (detak jantung maksimal setelah latihan fisik intens)', 0, 1000)
 exang = st.number_input('exang ( ada tidaknya rasa sakit atau tekanan pada dada akibat kurangnya pasokan darah dan oksigen yang cukup ke jantung)', 0, 1000)
 oldpeak = st.number_input('oldpeak (penurunan segmen ST pada elektrokardiogram (EKG) setelah latihan fisik)', 0, 1000)
