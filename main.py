@@ -52,4 +52,8 @@ X_baru = np.array([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, 
 prediksi = knn.predict(X_baru)
 
 if st.button('Prediksi Penyakit Jantung'):
+    if (prediksi[0]==0):
+       prediksi = 'Pasien Tidak Berpotensi Terkena Penyakit Jantung'
+    else:
+        prediksi = 'Pasien Berpotensi Terkena Penyakit Jantung'
     st.success(prediksi)
