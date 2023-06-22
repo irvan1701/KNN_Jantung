@@ -54,7 +54,7 @@ prediksi = knn.predict(X_baru)
 if st.button('Prediksi Penyakit Jantung'):
     if (prediksi[0]==0):
         prediksi = 'Pasien Tidak Berpotensi Terkena Penyakit Jantung'
-        st.success(prediksi)
+        st.sucess(prediksi)
     else:
         prediksi = 'Pasien Berpotensi Terkena Penyakit Jantung'
         st.error(prediksi)
